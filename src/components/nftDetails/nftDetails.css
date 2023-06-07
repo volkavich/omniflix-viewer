@@ -1,0 +1,74 @@
+.details-base{
+    display:flex;
+}
+
+.details-left{
+    padding: 2px;
+    width: 40%;
+    height:84vh;
+    border-right: 3px rgba(15, 15, 15, 0.579) solid;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.left-image-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+}
+
+.left-discription-div{
+    color: white;
+    width: 500px;
+    margin: 20px;
+}
+
+.left-discription-div > b{
+    font-size: 1.3rem;    
+}
+
+
+.details-image{
+    border: 3px solid black;
+    width:430px;
+    height: auto;
+    object-fit: cover;
+}
+
+.right-details-div{
+    margin: 33px;
+    padding: 8px;
+    color:white;
+    overflow: hidden;
+    backdrop-filter: blur(18px) saturate(174%);
+    -webkit-backdrop-filter: blur(18px) saturate(174%);
+    background-color: rgba(17, 25, 40, 0.7);
+    border-radius: 8px;
+    border: 2px solid rgba(0, 0, 0, 0.525);
+}
+
+.right-details-div > p > b {
+    font-size: 18.5px;
+    padding-right: 10px;
+}
+
+.a-link{
+    text-decoration: underline;
+    font-size: 16px;
+    color:seagreen;
+    font-weight: 400;
+}

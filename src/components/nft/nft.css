@@ -1,0 +1,56 @@
+.nft-base{
+  height:100vh;
+}
+
+.card {
+  background-color: #DCCBCB;
+  box-shadow: 8px 8px 1px black;
+  transition: 0.3s;
+  height: 230px;
+  width: 180px;
+  padding: 10px;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: solid 3px black;
+  cursor: pointer;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card > img {
+  border: solid 1px black;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  
+}
+
+.container {
+  width: 100%;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-top: -10px;
+}
+
+.super-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: center;
+}
+
+.super-super-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-nft-heading{
+  color: #ffffff;
+  text-shadow: 5px 5px 10px black;
+}

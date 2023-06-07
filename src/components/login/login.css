@@ -1,0 +1,112 @@
+.root{
+  display: flex;
+}
+
+.right {
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.right-video{
+  left:0;
+  top:0;
+  z-index:-1;
+  object-fit: cover;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .right-video{
+    width:100%;
+    height:auto;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .right-video{
+    width:auto;
+    height:100%;
+  }
+}
+
+.inner-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  height: 50%;
+  padding-left: 4rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.29);
+}
+
+.login-logo {
+  width: 320px;
+  height: 100px;
+  height: auto;
+}
+
+.caption {
+  padding-left:20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.65rem;
+  background: linear-gradient(90.06deg, #f2f2f2 3.23%, #f2f2f2 102.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.KeplrButtonLogo {
+  width: 3.4rem;
+  height: 3.4rem;
+  padding-right: 1rem;
+}
+
+.login-button {
+  margin-left:20px;
+  width:350px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 90px;
+  left: 1074px;
+  top: 705px;
+
+  background: #dccbcb;
+  border: 3px solid #000000;
+  box-shadow: 10px 10px 1px #000000;
+  border-radius: 1.7rem;
+}
+
+.login-button:active{
+  box-shadow:0px 0px;
+  transition-duration: 150ms;
+  transform: translateX(10px) translateY(10px);
+}
+
+.login-button:hover{
+  background: #ccbebe;
+  transition-duration: 150ms;
+}
+
+.login-text {
+  font-family: "Space Grotesk";
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 41px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+

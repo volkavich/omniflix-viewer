@@ -1,0 +1,88 @@
+.navbar {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  backdrop-filter: blur(18px) saturate(174%);
+  -webkit-backdrop-filter: blur(18px) saturate(174%);
+  background-color: rgba(17, 25, 40, 0.7);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.525);
+}
+
+.omni-header-logo {
+  width: 220px;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul > li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.home {
+  padding: 0.75rem 4rem;
+  background: #d48f43;
+  border: 3px solid #000000;
+  box-shadow: 5px 5px 1px #000000;
+  border-radius: 40px;
+}
+
+.home:hover{
+    cursor: pointer;
+}
+
+.home:active{
+    transform:translateX(5px) translateY(5px);
+    box-shadow: 0px 0px;
+    transition-duration: 100ms;
+}
+
+.nfts {
+  padding: 0.75rem 4rem;
+  background: #cb5353;
+  border: 3px solid #000000;
+  box-shadow: 5px 5px 1px #000000;
+  border-radius: 40px;
+}
+
+.nfts:hover{
+    cursor: pointer;
+}
+
+.nfts:active{
+    transform:translateX(5px) translateY(5px);
+    box-shadow: 0px 0px;
+    transition-duration: 100ms;
+}
+
+.user{
+    height:60px;
+    width: 280px;
+    display: flex;
+    background-color: #DCCBCB;
+    border: 3px solid #000000;
+    box-shadow: 5px 5px 1px #000000;
+    border-radius: 40px;
+    font-size: small;
+    font-weight: 700;
+}
+
+
+.user-logo{
+    padding: 0.75rem;
+    width: 2rem;
+    height: auto;
+}

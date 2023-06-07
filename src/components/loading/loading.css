@@ -1,0 +1,56 @@
+.base {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.logo {
+  width: 320px;
+  height: auto;
+}
+
+.message {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 310px;
+  height: 400px;
+  background: #dccbcb;
+  border: 5px solid #000000;
+  box-shadow: 10px 10px 1px #000000;
+}
+
+.keplr-logo {
+    padding-top: 30px;
+  width: 7rem;
+  height: 7rem;
+}
+
+.loading-logo {
+  width: 2.2rem;
+  height: 2.2rem;
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}
+
+.text {
+  width: 260px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #000000;
+}
