@@ -1,22 +1,29 @@
 import "./header.css";
 import { useActiveChain, useAccount,  useDisconnect } from "graz";
+import {Link, useNavigate} from 'react-router-dom'
 
 function Header() {
   const { data: account } = useAccount();
   const { disconnect } = useDisconnect();
   const activeChain = useActiveChain();
 
+  const navigate = useNavigate();
+
   return (
     <div>
       <header className="navbar">
         <img src="/OmniLogo.svg" alt="logo" className="omni-header-logo"></img>
         <ul>
-          <li className="home">
-            <a href="">Home</a>
+        <Link to='/home'>
+          <li className="home list">
+            Home
           </li>
-          <li className="nfts">
-            <a href="">NFTs</a>
+        </Link>
+        <Link to='/nfts'>
+          <li className="nfts list">
+            NFTs
           </li>
+        </Link>  
         </ul>
         <div className="user">
           <div className="user-icon">
@@ -31,7 +38,7 @@ function Header() {
             <p><b>Active Chain: </b>{activeChain?.chainId}</p>
             </div>
             <div className="for-disconnect">
-            <button className="disconnect" onClick={() => (disconnect())} >Disconnect</button>
+            <button className="disconnect" onClick={() => {disconnect(); navigate("/") } } >Disconnect</button>
             </div>
             
           </div>

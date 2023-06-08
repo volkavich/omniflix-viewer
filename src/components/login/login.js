@@ -1,5 +1,6 @@
 import "./login.css";
 import { useConnect } from "graz";
+import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
   
@@ -7,6 +8,7 @@ function LoginPage() {
     document.querySelector("video").play();
   };
 
+  const navigate = useNavigate();
 
   const { connect } = useConnect();
 
@@ -37,7 +39,7 @@ function LoginPage() {
             </p>
           </div>
 
-          <button className="login-button" onClick={() => !window.keplr? alert("Please install keplr extension to start using this app") : connect()}>
+          <button className="login-button" onClick={() => {!window.keplr? alert("Please install keplr extension to start using this app") : connect(); navigate('/loading') } }>
             <span className="login-text">
               <img
                 src="/KeplrLogo.svg"

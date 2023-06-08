@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Hero from "./components/hero/hero";
 import Loading from "./components/loading/loading";
@@ -9,19 +10,23 @@ import { GrazProvider, mainnetChains } from "graz";
 
 function App() {
   return (
-    <GrazProvider
-      grazOptions={{
-        defaultChain: mainnetChains.cosmoshub,
-      }}
-    >
-      <div className="App">
-        <LoginPage />
-        <Loading />
-        <Hero />
-        <NFTpage />
-        <NFTDetails />
-      </div>
-    </GrazProvider>
+    <div className="App">
+      <GrazProvider
+        grazOptions={{
+          defaultChain: mainnetChains.cosmoshub,
+        }}
+      >
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<LoginPage />} />
+            <Route path="loading" element={<Loading />} />
+            <Route path="home" element={<Hero />} />
+            <Route path="nfts" element={<NFTpage />} />
+            <Route path="nftDetails" element={<NFTDetails />} />
+          </Routes>
+        </BrowserRouter>
+      </GrazProvider>
+    </div>
   );
 }
 

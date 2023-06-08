@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./nft.css";
 import Header from "../header/header";
+import { Link } from "react-router-dom";
 
 const NFTpage = () => {
   const [data, setData] = useState([]);
@@ -21,24 +22,27 @@ const NFTpage = () => {
 
   return (
     <div className="nft-base">
-        <Header /> 
-        <div className="super-super-card">
-      <h1 className="all-nft-heading">All NFTs</h1>
+      <Header />
+      <div className="super-super-card">
+        <h1 className="all-nft-heading">All NFTs</h1>
 
-      <div className="super-card">
-        {data.map((record) => (
-          <div className="card" key={record.nft.id}>
-            <img src={record.denom.preview_uri} alt={record.nft.name} />
+        <div className="super-card">
+          
+            {data.map((record) => (
+              <Link to="/nftDetails">
+              <div className="card" key={record.nft.id}>
+                <img src={record.denom.preview_uri} alt={record.nft.name} />
 
-            <div className="container">
-              <h4>{record.nft.name}</h4>
-            </div>
-          </div>
-        ))}
+                <div className="container">
+                  <h4>{record.nft.name}</h4>
+                </div>
+              </div>
+              </Link>
+            ))}
+          
+        </div>
       </div>
-    </div>   
     </div>
-    
   );
 };
 
