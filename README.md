@@ -1,4 +1,4 @@
-## UI Assignment - Omniflix Viewer 💻 💕
+# UI Assignment - Omniflix Viewer 💻 💕
 *Project bootstraped with  ` npx create-react-app `*
 
 ----
