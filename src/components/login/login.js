@@ -2,13 +2,16 @@ import "./login.css";
 import { useConnect } from "graz";
 
 function LoginPage() {
+  
   window.onload = async () => {
     document.querySelector("video").play();
+    if (!window.keplr) {
+      alert("Please install keplr extension to start using this app");
+    }
   };
 
-  
+
   const { connect } = useConnect();
-  
 
   return (
     <div className="root">
@@ -37,7 +40,7 @@ function LoginPage() {
             </p>
           </div>
 
-          <button className="login-button" onClick={() => (connect())}>
+          <button className="login-button" onClick={() => connect()}>
             <span className="login-text">
               <img
                 src="/KeplrLogo.svg"
