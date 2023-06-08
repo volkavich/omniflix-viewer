@@ -1,16 +1,27 @@
 import "./login.css";
+import { useConnect } from "graz";
 
 function LoginPage() {
+  window.onload = async () => {
+    document.querySelector("video").play();
+  };
 
-    window.onload = async () =>{
-        document.querySelector('video').play();
-    }
+  
+  const { connect } = useConnect();
+  
 
   return (
     <div className="root">
       <div className="right">
-        <video autoPlay loop muted playsInline poster="" className="right-video">
-            <source src="/UltimateVideoCollage.mp4" type="video/mp4" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster=""
+          className="right-video"
+        >
+          <source src="/UltimateVideoCollage.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="left">
@@ -26,7 +37,7 @@ function LoginPage() {
             </p>
           </div>
 
-          <button className="login-button">
+          <button className="login-button" onClick={() => (connect())}>
             <span className="login-text">
               <img
                 src="/KeplrLogo.svg"

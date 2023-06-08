@@ -72,17 +72,67 @@ a {
     height:60px;
     width: 280px;
     display: flex;
+    align-items: center;
     background-color: #DCCBCB;
     border: 3px solid #000000;
     box-shadow: 5px 5px 1px #000000;
     border-radius: 40px;
     font-size: small;
     font-weight: 700;
+    overflow: hidden;
 }
 
 
 .user-logo{
-    padding: 0.75rem;
+    margin-top: 4px;
+    padding: 1.2rem;
     width: 2rem;
     height: auto;
+}
+
+.user-details{
+  margin-left: -10px;
+}
+
+.user-details > p > b{
+    font-size: 14px;
+}
+
+.dropdown{
+  
+  border-radius: 10px;
+  position: absolute;
+  top:90%;
+  right:7%;
+  background-color: #DCCBCB ;
+  max-height:0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.user:hover > .dropdown {
+    max-height: 150px;
+    border: solid black 3px;
+}
+
+.dropdown-text{
+  padding: 5px;
+}
+
+.disconnect{
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px black;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.disconnect:active{
+    transform:translateX(2px) translateY(2px);
+    box-shadow: 0px 0px;
+    transition-duration: 100ms;
+}
+
+.for-disconnect{
+  text-align: center;
 }
