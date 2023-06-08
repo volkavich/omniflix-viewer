@@ -6,6 +6,8 @@
 
 *Design and Inspiration could be found at this [Figma File](https://www.figma.com/file/BGQ2m8ejE82oDgcteoeF5m/OminFlix-NFT-viewer?type=design&node-id=0%3A1&t=vhQvsRjSgJUtnY2E-1)*
 
+*The website is hosted and you can check it out [here](https://omniflix-viewer.vercel.app/).*
+
 ---- 
 
 ### Getting Started
