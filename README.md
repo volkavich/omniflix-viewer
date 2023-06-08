@@ -19,6 +19,29 @@
 ---
 
 ### Screenshots
+![Login Page](https://raw.githubusercontent.com/volkavich/omniflix-viewer-screenshots/main/Screenshot%202023-06-08%20191141.png)
+*Login Page*
+
+![Loading Page](https://raw.githubusercontent.com/volkavich/omniflix-viewer-screenshots/main/Screenshot%202023-06-08%20191159.png)
+*Loading Page*
+
+![Home Page](https://raw.githubusercontent.com/volkavich/omniflix-viewer-screenshots/main/Screenshot%202023-06-08%20191231.png)
+*Home Page*
+
+![Home Page showing Account details](https://raw.githubusercontent.com/volkavich/omniflix-viewer-screenshots/main/Screenshot%202023-06-08%20191302.png)
+*Home Page showing Account details*
+
+![All NFTs Page](https://raw.githubusercontent.com/volkavich/omniflix-viewer-screenshots/main/Screenshot%202023-06-08%20191328.png)
+*Showing All NFTs*
+
+![NFT Details Page](https://raw.githubusercontent.com/volkavich/omniflix-viewer-screenshots/main/Screenshot%202023-06-08%20191406.png)
+*NFT Details Page*
+
+---
+
+### My Process
+ 
+To be updated!
 
 ---
 
