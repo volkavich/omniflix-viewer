@@ -56,9 +56,11 @@ My process of approching this assignment could be divided into two parts:
   * Below are the screenshots of the app -
 
     ![Get Blance Button](https://raw.githubusercontent.com/volkavich/omniflix-viewer-screenshots/main/Screenshot%202023-06-10%20012701.png)
+    
     *Get Balance Button*
 
     ![Balance displayed in Console](https://raw.githubusercontent.com/volkavich/omniflix-viewer-screenshots/main/Screenshot%202023-06-10%20012726.png)
+    
     *Balance displayed in Console*
   * But I still wanted to find out an easy approach for connecting Keplr.
 
