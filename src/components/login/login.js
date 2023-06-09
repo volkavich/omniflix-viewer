@@ -39,7 +39,7 @@ function LoginPage() {
             </p>
           </div>
 
-          <button className="login-button" onClick={() => {!window.keplr? alert("Please install keplr extension to start using this app") : connect(); navigate('/loading') } }>
+          <button className="login-button" onClick={() => {!window.keplr? alert("Please install keplr extension to start using this app") : connect(); !window.keplr? window.open('https://www.keplr.app/', '_blank') : navigate('/loading') } }>
             <span className="login-text">
               <img
                 src="/KeplrLogo.svg"
