@@ -110,3 +110,34 @@
   color: black;
 }
 
+
+@media only screen and (max-width: 600px) {
+  .right{
+    display: none;
+  }
+  .left{
+    width: 100%;
+  }
+  .login-button {
+    margin-left:20px;
+    width:300px;
+    height: 90px;
+    background: #dccbcb;
+    border: 3px solid #000000;
+    box-shadow: 10px 10px 1px #000000;
+    border-radius: 1.7rem;
+  }
+  .login-text {
+    font-family: "Space Grotesk";
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.24rem;
+    line-height: 26px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  
+}
