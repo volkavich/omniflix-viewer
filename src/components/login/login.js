@@ -3,7 +3,6 @@ import { useConnect } from "graz";
 import { useNavigate } from "react-router-dom";
 
 function LoginPage() {
-  
   window.onload = async () => {
     document.querySelector("video").play();
   };
@@ -39,7 +38,19 @@ function LoginPage() {
             </p>
           </div>
 
-          <button className="login-button" onClick={() => {!window.keplr? alert("Please install keplr extension to start using this app") : connect(); !window.keplr? window.open('https://www.keplr.app/', '_blank') : navigate('/loading') } }>
+          <button
+            className="login-button"
+            onClick={() => {
+              !window.keplr
+                ? alert(
+                    "Please install keplr extension to start using this app"
+                  )
+                : connect();
+              !window.keplr
+                ? window.open("https://www.keplr.app/", "_blank")
+                : navigate("/loading");
+            }}
+          >
             <span className="login-text">
               <img
                 src="/KeplrLogo.svg"

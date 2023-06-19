@@ -27,9 +27,8 @@ const NFTpage = () => {
         <h1 className="all-nft-heading">All NFTs</h1>
 
         <div className="super-card">
-          
-            {data.map((record) => (
-              <Link to="/nftDetails">
+          {data.map((record) => (
+            <Link to="/nftDetails">
               <div className="card" key={record.nft.id}>
                 <img src={record.denom.preview_uri} alt={record.nft.name} />
 
@@ -37,9 +36,8 @@ const NFTpage = () => {
                   <h4>{record.nft.name}</h4>
                 </div>
               </div>
-              </Link>
-            ))}
-          
+            </Link>
+          ))}
         </div>
       </div>
     </div>

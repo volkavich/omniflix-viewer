@@ -6,8 +6,6 @@
   height: 100vh;
 }
 
-
-
 .logo {
   width: 320px;
   height: auto;
@@ -26,7 +24,7 @@
 }
 
 .keplr-logo {
-    padding-top: 30px;
+  padding-top: 30px;
   width: 7rem;
   height: 7rem;
 }
@@ -38,12 +36,12 @@
 }
 
 @keyframes loading {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(359deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 .text {

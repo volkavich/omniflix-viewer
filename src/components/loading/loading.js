@@ -22,7 +22,7 @@ function Loading() {
         <img src="/KeplrLogo.svg" alt="KeplrLogo" className="keplr-logo"></img>
         <img src="/Wait.svg" alt="Waiting" className="loading-logo"></img>
         <p className="text">
-          Loading <br/>
+          Loading <br />
           Approve connection request on the Keplr window...
         </p>
       </div>
