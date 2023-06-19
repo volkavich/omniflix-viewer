@@ -16,11 +16,22 @@
 .slide-track {
   display: flex;
   width: calc(250px * 10);
-  animation: scroll 20s linear infinite;
+  -webkit-animation: scroll 20s linear infinite;
+          animation: scroll 20s linear infinite;
 }
 
 .slide-track:hover {
-  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes scroll {
@@ -45,7 +56,8 @@
   width: 200px;
   height: auto;
   transition: transform 1s;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .image:hover {
