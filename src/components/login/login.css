@@ -1,4 +1,4 @@
-.root{
+.root {
   display: flex;
 }
 
@@ -8,24 +8,24 @@
   overflow: hidden;
 }
 
-.right-video{
-  left:0;
-  top:0;
-  z-index:-1;
+.right-video {
+  left: 0;
+  top: 0;
+  z-index: -1;
   object-fit: cover;
 }
 
 @media (min-aspect-ratio: 16/9) {
-  .right-video{
-    width:100%;
-    height:auto;
+  .right-video {
+    width: 100%;
+    height: auto;
   }
 }
 
 @media (min-aspect-ratio: 16/9) {
-  .right-video{
-    width:auto;
-    height:100%;
+  .right-video {
+    width: auto;
+    height: 100%;
   }
 }
 
@@ -55,7 +55,7 @@
 }
 
 .caption {
-  padding-left:20px;
+  padding-left: 20px;
   font-style: normal;
   font-weight: 700;
   font-size: 1.65rem;
@@ -72,8 +72,8 @@
 }
 
 .login-button {
-  margin-left:20px;
-  width:350px;
+  margin-left: 20px;
+  width: 350px;
   padding-left: 1rem;
   padding-right: 1rem;
   height: 90px;
@@ -86,13 +86,13 @@
   border-radius: 1.7rem;
 }
 
-.login-button:active{
-  box-shadow:0px 0px;
+.login-button:active {
+  box-shadow: 0px 0px;
   transition-duration: 150ms;
   transform: translateX(10px) translateY(10px);
 }
 
-.login-button:hover{
+.login-button:hover {
   background: #ccbebe;
   transition-duration: 150ms;
 }
@@ -110,17 +110,16 @@
   color: black;
 }
 
-
 @media (max-width: 600px) {
-  .right{
+  .right {
     display: none;
   }
-  .left{
+  .left {
     width: 100%;
   }
   .login-button {
-    margin-left:20px;
-    width:300px;
+    margin-left: 20px;
+    width: 300px;
     height: 90px;
     background: #dccbcb;
     border: 3px solid #000000;
@@ -141,7 +140,8 @@
   }
 
   .inner-left {
-  padding-left: 2rem;
-}
-  
+    height: 70%;
+    justify-content: space-around;
+    padding-left: 2rem;
+  }
 }
