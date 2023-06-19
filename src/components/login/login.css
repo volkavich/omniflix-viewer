@@ -111,7 +111,7 @@
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .right{
     display: none;
   }
@@ -139,5 +139,9 @@
     align-items: center;
     color: black;
   }
+
+  .inner-left {
+  padding-left: 2rem;
+}
   
 }
