@@ -7,6 +7,7 @@ function Hero() {
   return (
     <div className="hero-base">
       <Header />
+
       <div className="welcome-holder">
         <h1 className="hero-text red">W</h1>
         <h1 className="hero-text yellow">E</h1>
