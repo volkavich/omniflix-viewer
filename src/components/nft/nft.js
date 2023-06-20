@@ -20,6 +20,8 @@ const NFTpage = () => {
       });
   }, []);
 
+
+
   return (
     <div className="nft-base">
       <Header />
@@ -28,7 +30,7 @@ const NFTpage = () => {
 
         <div className="super-card">
           {data.map((record) => (
-            <Link to="/nftDetails">
+            <Link to={`/nftDetails/${record.id}`}>
               <div className="card" key={record.nft.id}>
                 <img src={record.denom.preview_uri} alt={record.nft.name} />
 

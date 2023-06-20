@@ -23,6 +23,7 @@ function App() {
             <Route path="home" element={<Hero />} />
             <Route path="nfts" element={<NFTpage />} />
             <Route path="nftDetails" element={<NFTDetails />} />
+            <Route path="nftDetails/:id" element={<NFTDetails/>} />
           </Routes>
         </BrowserRouter>
       </GrazProvider>

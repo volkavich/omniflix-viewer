@@ -1,17 +1,22 @@
 import { useEffect, useState } from "react";
 import "./nftDetails.css";
 import Header from "../header/header";
+import {useParams} from 'react-router-dom'
 
 function NFTDetails() {
   const [data, setData] = useState([]);
+  
+  const {id} = useParams();
+
+  console.log(id)
 
   useEffect(() => {
     fetch(
-      "https://data-api.omniflix.studio/listings?statuses%5B%5D=LISTED&verified=true&ipInfringement=false&sortBy=created_at&order=desc&limit=1"
+      `https://data-api.omniflix.studio/listings/${id}`
     )
       .then((res) => res.json())
       .then((d) => {
-        const list = d.result.list;
+        const list = [d.result];
         setData(list);
       })
       .catch((error) => {
@@ -19,10 +24,11 @@ function NFTDetails() {
       });
   }, []);
 
+
   return (
     <div>
       <Header />
-      <div className="details-base">
+      <div className="details-base"> 
         <div className="details-left">
           {data.map((record) => (
             <div>
