@@ -101,10 +101,4 @@ My process of approching this assignment could be divided into two parts:
 
 ---
 
-*I would like to extend my gratitude to [Sistla V Abhishek](https://github.com/svabhishek) whom I reached out whenever I felt Stuck.*
-
-*I would also like to thank people at Cosmic Tech Labs and OmniFlix Network for giving me this opportunity.*
-
-*Hope you guys like it*😊
-
 *Made with*❤️
